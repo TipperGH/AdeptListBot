@@ -63,7 +63,6 @@ module.exports = {
 					
 					console.log(incompleteList);
 				}
-				request.send();
 			} catch (e) {
 				interaction.reply( { content: 'Something went wrong, please check your steam ID and ensure your steam profile is publicly visible.', flags: MessageFlags.Ephemeral } );
 			}
