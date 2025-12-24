@@ -10,6 +10,7 @@ Simple JS Bot to dynamically retrieve Achievement stats from Steam's public Web 
     - steamWebAPIToken: created by registering an API key with steam.
 - adeptList.js has an updated path to config.json on Line 2.
 - Node.JS installed (I used v24.12.0).
+- 'npm install' command ran on the repo directory to install the required discord.js packages.
 
 ## To run the bot:
 - Use the command "node ." from the root directory of this repo with the command terminal of choice.
