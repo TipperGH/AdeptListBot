@@ -1,5 +1,5 @@
 const { SlashCommandBuilder, MessageFlags } = require('discord.js');
-const steamWebAPIToken = require('c:/Repos/Adept-List/config.json').steamWebAPIToken;
+const steamWebAPIToken = require('c:/PATH-TO-REPO/config.json').steamWebAPIToken;
 var XMLHttpRequest = require('xmlhttprequest').XMLHttpRequest;
 let request = new XMLHttpRequest();
 
