@@ -48,23 +48,23 @@ module.exports = {
 					}
 				}
 				if ((completedList.length <= 28) && (incompleteList.length <= 29)) {
-					interaction.reply( {content: 'Something went wrong. Please double check that your steam profile visibility is set to public.', flags: MessageFlags.Ephemeral } );
+					interaction.reply( {content: 'Something went wrong. Please double check that your steam profile visibility is set to public.', ephemeral: true } );
 				} else {
 					if (interaction.options.getString('category') === 'completed') {
-						interaction.reply( { content: completedList, flags: MessageFlags.Ephemeral } );
+						interaction.reply( { content: completedList, ephemeral: true } );
 					} else if (interaction.options.getString('category') === 'incomplete') {
-						interaction.reply( { content: incompleteList, flags: MessageFlags.Ephemeral } );
+						interaction.reply( { content: incompleteList, ephemeral: true } );
 					} else if (interaction.options.getString('category') === 'all') {
-						interaction.reply( { content: completedList.concat("\n"+incompleteList), flags: MessageFlags.Ephemeral } );
+						interaction.reply( { content: completedList.concat("\n"+incompleteList), ephemeral: true } );
 					} else {
-						interaction.reply( {content: 'Something went wrong. Please double check the category picked and try again.', flags: MessageFlags.Ephemeral } );
+						interaction.reply( {content: 'Something went wrong. Please double check the category picked and try again.', ephemeral: true } );
 					}
 					console.log(completedList);
 					
 					console.log(incompleteList);
 				}
 			} catch (e) {
-				interaction.reply( { content: 'Something went wrong, please check your steam ID and ensure your steam profile is publicly visible.', flags: MessageFlags.Ephemeral } );
+				interaction.reply( { content: 'Something went wrong, please check your steam ID and ensure your steam profile is publicly visible.', ephemeral: true } );
 			}
 		};
 	}
